@@ -13,7 +13,7 @@ const Details = () => {
     }, [name]);
 
     return (
-        <div className="text-center mt-5">
+        <div className=" mt-5">
             <div class="container w-75 border">
                 <div class="row gx-5">
                     <div class="col">
@@ -26,10 +26,16 @@ const Details = () => {
                         </div>
                     </div>
                     <div class="col">
-                        <h5 class="mt-5">{pokemon ? <p>  {pokemon.name}</p> : ""}</h5>
-                        <ul class="container w-25 ">
-                            <li>{pokemon ? pokemon.types[0].type.name : ""}</li>
+                        <h5 class="mt-5 ">{pokemon ? <p>  {pokemon.name}</p> : ""}</h5>
+                        <ul >
+                            <li className="d-flex justify-content-start"> •hp:{pokemon ? pokemon.stats[0].base_stat : ""}</li>
+                            <li className="d-flex justify-content-start">• attak:{pokemon ? pokemon.stats[1].base_stat : ""}</li>
+                            <li className="d-flex justify-content-start">• defense:{pokemon ? pokemon.stats[2].base_stat : ""}</li>
+                            <li className="d-flex justify-content-start">• special-attack:{pokemon ? pokemon.stats[3].base_stat : ""}</li>
+                            <li className="d-flex justify-content-start">• special-defense:{pokemon ? pokemon.stats[4].base_stat : ""}</li>
+                            <li className="d-flex justify-content-start">• speed: {pokemon ? pokemon.stats[5].base_stat : ""}</li>
                         </ul>
+
                     </div>
                 </div>
             </div>

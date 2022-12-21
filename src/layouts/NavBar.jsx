@@ -4,6 +4,7 @@ import NavbarHeader from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Navbar = () => {
 
     return (
@@ -13,7 +14,7 @@ const Navbar = () => {
                     <NavbarHeader.Toggle aria-controls="navbarScroll" />
                     <NavbarHeader.Collapse id="navbarScroll">
                         <Nav className="me-auto" >
-                            <i class="bi bi-geo-alt-fill"></i>
+                            <h2>📍</h2>
                         </Nav>
                         <Nav className="me-3">
                             <NavLink
